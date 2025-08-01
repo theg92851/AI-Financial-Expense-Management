@@ -76,12 +76,6 @@ A comprehensive, professional financial management application with AI-powered b
 
 ## 🚀 Quick Start
 
-### 1. Clone the Repository
-```bash
-git clone <repository-url>
-cd ai-expense-manager
-```
-
 ### 2. Install Dependencies
 ```bash
 npm install
@@ -126,48 +120,6 @@ npm start
 - **API**: http://localhost:3000/api
 - **Health Check**: http://localhost:3000/health
 
-## 📁 Project Structure
-
-```
-ai-expense-manager/
-├── config/
-│   ├── database.js          # MongoDB connection configuration
-│   └── passport.js          # Passport authentication strategies
-├── controllers/
-│   ├── authController.js    # Authentication logic
-│   ├── budgetController.js  # Budget management
-│   ├── expenseController.js # Expense management
-│   └── aiController.js      # AI analysis and suggestions
-├── middleware/
-│   ├── auth.js             # Authentication middleware
-│   └── validation.js       # Input validation middleware
-├── models/
-│   ├── User.js             # User data model
-│   ├── Expense.js          # Expense data model
-│   └── Budget.js           # Budget data model
-├── routes/
-│   ├── auth.js             # Authentication routes
-│   ├── expenses.js         # Expense management routes
-│   ├── budget.js           # Budget management routes
-│   └── ai.js               # AI analysis routes
-├── public/
-│   ├── css/
-│   │   └── style.css       # Main stylesheet
-│   ├── js/
-│   │   ├── main.js         # Landing page functionality
-│   │   ├── auth.js         # Authentication handling
-│   │   └── dashboard.js    # Dashboard functionality
-│   ├── index.html          # Landing page
-│   ├── login.html          # Login page
-│   ├── register.html       # Registration page
-│   └── dashboard.html      # Main application dashboard
-├── .env                    # Environment variables
-├── app.js                  # Main application file
-└── package.json           # Project dependencies and scripts
-```
-
-## 🔌 API Endpoints
-
 ### Authentication
 ```
 POST   /api/auth/register     # User registration
@@ -197,11 +149,6 @@ POST   /api/budget/ai-suggestions  # Generate AI suggestions
 GET    /api/budget/ai-suggestions  # Get AI suggestion history
 ```
 
-### AI Analysis
-```
-POST   /api/ai/advanced-suggestions  # Generate advanced AI insights
-GET    /api/ai/financial-health      # Get financial health score
-```
 
 ## 🧠 AI Features Explained
 
@@ -271,16 +218,6 @@ A comprehensive score (0-100) based on:
 ### API Testing
 Use tools like Postman or Thunder Client to test API endpoints:
 
-```bash
-# Health check
-curl http://localhost:3000/health
-
-# Register user
-curl -X POST http://localhost:3000/api/auth/register \
-  -H "Content-Type: application/json" \
-  -d '{"username":"testuser","email":"test@example.com","password":"Test123!"}'
-```
-
 ## 🚀 Deployment
 
 ### Environment Variables for Production
@@ -311,9 +248,6 @@ GOOGLE_CLIENT_SECRET=your-production-google-client-secret
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🆘 Support
 
@@ -331,9 +265,5 @@ If you encounter any issues:
 - MongoDB team for the robust database solution
 - Passport.js for authentication middleware
 - Chart.js for data visualization capabilities
-- All open-source contributors who made this project possible
 
----
-
-**Built with ❤️ for better financial management**
 
